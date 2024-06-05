@@ -102,35 +102,7 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
-    document.getElementById('log').addEventListener('click', () => console.log('This is a console log message.'));
-    document.getElementById('error').addEventListener('click', () => console.error('This is a console error message.'));
-    document.getElementById('count').addEventListener('click', () => console.count('Console Count'));
-    document.getElementById('warn').addEventListener('click', () => console.warn('This is a console warn message.'));
-    document.getElementById('assert').addEventListener('click', () => console.assert(false, 'This is a console assert message.'));
-    document.getElementById('clear').addEventListener('click', () => console.clear());
-    document.getElementById('dir').addEventListener('click', () => console.dir(document.body));
-    document.getElementById('dirxml').addEventListener('click', () => console.dirxml(document));
-    document.getElementById('group').addEventListener('click', () => {
-      console.group('Group Start');
-      console.log('Inside group');
-      console.groupEnd();
-    });
-    document.getElementById('groupEnd').addEventListener('click', () => console.groupEnd());
-    document.getElementById('table').addEventListener('click', () => console.table([{ name: 'John', age: 30 }, { name: 'Jane', age: 25 }]));
-    document.getElementById('time').addEventListener('click', () => console.time('Timer'));
-    document.getElementById('timeEnd').addEventListener('click', () => console.timeEnd('Timer'));
-    document.getElementById('trace').addEventListener('click', () => console.trace());
-
-    document.getElementById('globalError').addEventListener('click', () => {
-      // Trigger a global error
-      try {
-        nonExistentFunction();
-      } catch (error) {
-        console.error('Caught an error: ', error);
-      } finally {
-        console.log('This will run regardless of the error.');
-      }
-    });
+    
   </script>
 </body>
 
